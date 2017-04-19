@@ -1,0 +1,28 @@
+Package: googleTagManageR
+Type: Package
+Title: Interact with the Google Tag Manager API
+Version: 0.1.0
+Author: Manos Parzakonis
+Maintainer: Manos Parzakonis <parzakonis.m@gmail.com>
+Description: The R way to interact with Google's Tag Manager API
+    At the moment listing of elements is available, but in the future both updates and delete will be supported. 
+    Most of this is adopted from the excellent autoGoogleAPi package from Mark Edmondson <r@sunholo.com>
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.2.0)
+Imports:
+    dplyr (>= 0.5.0),
+    googleAuthR (>= 0.5.1),
+    httr (>= 1.2.1),
+    jsonlite (>= 1.0),
+    magrittr (>= 1.5),
+    tidyjson (>= 0.2.1),
+    testthat (>= 1.0.2),
+    utils
+Suggests:
+    knitr,
+    rmarkdown,
+    googleCloudStorageR
+RoxygenNote: 6.0.1
