@@ -4,7 +4,7 @@
 #'
 #' @return a list of triggers
 #' @importFrom googleAuthR gar_api_generator
-#' @family managementAPI functions
+#' @family get functions
 #' @export
 #'
 get_triggers_list <- function(accountId, containerId) {
@@ -18,7 +18,7 @@ get_triggers_list <- function(accountId, containerId) {
     )
   # tagmanager.triggers.list
   f <-
-    gar_api_generator(
+    googleAuthR::gar_api_generator(
       url,
       "GET",
       data_parse_function = function(x)

@@ -16,8 +16,7 @@ Get account list
 
 }
 \seealso{
-Other managementAPI functions: \code{\link{get_containers_list}},
-  \code{\link{get_tags_list}},
+Other get functions: \code{\link{get_tags_list}},
   \code{\link{get_triggers_list}},
   \code{\link{get_variables_list}}
 }

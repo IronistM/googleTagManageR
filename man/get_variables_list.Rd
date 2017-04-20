@@ -16,8 +16,7 @@ Get variables list
 
 }
 \seealso{
-Other managementAPI functions: \code{\link{get_accounts_list}},
-  \code{\link{get_containers_list}},
+Other get functions: \code{\link{get_accounts_list}},
   \code{\link{get_tags_list}},
   \code{\link{get_triggers_list}}
 }

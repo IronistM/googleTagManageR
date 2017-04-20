@@ -49,7 +49,7 @@ ga_auth <- function(new_user = FALSE, no_auto = FALSE) {
       'https://www.googleapis.com/auth/tagmanager.publish',
       'https://www.googleapis.com/auth/tagmanager.readonly'
     )
-  out <- gar_auto_auth(
+  out <- googleAuthR::gar_auto_auth(
     needed,
     new_user = new_user,
     no_auto = no_auto,

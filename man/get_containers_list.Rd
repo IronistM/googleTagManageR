@@ -15,9 +15,3 @@ Get containers list
 \details{
 
 }
-\seealso{
-Other managementAPI functions: \code{\link{get_accounts_list}},
-  \code{\link{get_tags_list}},
-  \code{\link{get_triggers_list}},
-  \code{\link{get_variables_list}}
-}
