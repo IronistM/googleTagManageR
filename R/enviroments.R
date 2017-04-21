@@ -37,7 +37,7 @@ get_enviroments_list <- function(accountId,containerId) {
 #' @param containerId
 #' @param environmentId
 #' @importFrom googleAuthR gar_api_generator
-#' @family list functions
+#' @family get functions
 #' @export
 #'
 get_enviroments_list <- function(accountId,containerId,environmentId) {

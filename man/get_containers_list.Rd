@@ -15,3 +15,6 @@ Get containers list
 \details{
 
 }
+\seealso{
+Other list functions: \code{\link{get_enviroments_list}}
+}
