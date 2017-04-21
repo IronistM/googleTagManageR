@@ -2,7 +2,7 @@
 % Please edit documentation in R/accounts.R
 \name{get_accounts_list}
 \alias{get_accounts_list}
-\title{Get account list}
+\title{Get GTM account list}
 \usage{
 get_accounts_list()
 }
@@ -10,13 +10,14 @@ get_accounts_list()
 a dataframe of accounts
 }
 \description{
-Get account list
+Get GTM account list
 }
 \details{
 
 }
 \seealso{
-Other get functions: \code{\link{get_tags_list}},
+Other get functions: \code{\link{get_container_versions}},
+  \code{\link{get_container}}, \code{\link{get_tags_list}},
   \code{\link{get_triggers_list}},
   \code{\link{get_variables_list}}
 }
