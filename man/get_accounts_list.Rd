@@ -17,7 +17,8 @@ Get GTM account list
 }
 \seealso{
 Other get functions: \code{\link{get_container_versions}},
-  \code{\link{get_container}}, \code{\link{get_tags_list}},
-  \code{\link{get_triggers_list}},
+  \code{\link{get_container}},
+  \code{\link{get_enviroments_list}},
+  \code{\link{get_tags_list}}, \code{\link{get_trigger}},
   \code{\link{get_variables_list}}
 }

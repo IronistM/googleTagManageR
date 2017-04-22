@@ -10,7 +10,7 @@
 get_containers_list <- function(accountId) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/"
     )
@@ -22,7 +22,7 @@ get_containers_list <- function(accountId) {
       data_parse_function = function(x)
         x
     )
-  f()$containers[,1:5]
+  f()$container
 }
 #' Get a GTM account's Container detail
 #'
@@ -36,7 +36,7 @@ get_container <- function(accountId,
                           containerId) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/"
     )
@@ -63,7 +63,7 @@ get_container_versions <- function(accountId,
                           containerId, headers, includeDeleted) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/",
       containerId,
@@ -76,5 +76,5 @@ get_container_versions <- function(accountId,
       data_parse_function = function(x)
         x
     )
-  f()$containerVersion$container
+  f()
 }

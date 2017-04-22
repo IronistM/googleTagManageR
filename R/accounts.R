@@ -9,9 +9,9 @@
 #'
 get_accounts_list <- function() {
   url <-
-    paste0("https://www.googleapis.com/tagmanager/v1/accounts/")
+    paste0("https://www.googleapis.com/tagmanager/v2/accounts/")
   f <- googleAuthR::gar_api_generator(url, "GET", data_parse_function = function(x) x)
-  f()$accounts
+  f()
 }
 #' Gets a GTM Account.
 #'
@@ -24,7 +24,7 @@ get_accounts_list <- function() {
 #' @importFrom googleAuthR gar_api_generator
 #' @export
 get_account <- function(accountId) {
-  url <- paste0("https://www.googleapis.com/tagmanager/v1/accounts/", accountId)
+  url <- paste0("https://www.googleapis.com/tagmanager/v2/accounts/", accountId)
   # tagmanager.accounts.get
   f <- googleAuthR::gar_api_generator(url, "GET", data_parse_function = function(x) x)
   f()

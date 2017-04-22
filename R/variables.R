@@ -10,11 +10,11 @@
 get_variables_list <- function(accountId, containerId) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/",
       containerId,
-      "/variables"
+      "/variables/"
     )
   # tagmanager.variables.list
   f <-

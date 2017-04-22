@@ -16,5 +16,6 @@ Get containers list
 
 }
 \seealso{
-Other list functions: \code{\link{get_enviroments_list}}
+Other list functions: \code{\link{get_enviroments_list}},
+  \code{\link{get_triggers_list}}
 }

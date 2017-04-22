@@ -11,7 +11,7 @@
 get_triggers_list <- function(accountId, containerId) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/",
       containerId,
@@ -41,7 +41,7 @@ get_triggers_list <- function(accountId, containerId) {
 get_trigger <- function(accountId, containerId, triggerId) {
   url <-
     paste0(
-      "https://www.googleapis.com/tagmanager/v1/accounts/",
+      "https://www.googleapis.com/tagmanager/v2/accounts/",
       accountId,
       "/containers/",
       containerId,

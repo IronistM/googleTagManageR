@@ -12,12 +12,7 @@ a list of triggers
 \description{
 Get triggers list
 }
-\details{
-
-}
 \seealso{
-Other get functions: \code{\link{get_accounts_list}},
-  \code{\link{get_container_versions}},
-  \code{\link{get_container}}, \code{\link{get_tags_list}},
-  \code{\link{get_variables_list}}
+Other list functions: \code{\link{get_containers_list}},
+  \code{\link{get_enviroments_list}}
 }
