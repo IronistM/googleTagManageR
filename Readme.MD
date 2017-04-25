@@ -8,3 +8,38 @@ At the moment listing of elements is available, but in the future both updates
 ### Credits
 Most of this is adopted from the excellent [autoGoogleAPI](https://github.com/MarkEdmondson1234/autoGoogleAPI) package from [Mark Edmondson](r@sunholo.com) and his most awesome [googleAnalyticsR](http://code.markedmondson.me/googleAnalyticsR) that I use daily.
 
+## Installation
+To install the package in your `R` setup just use `devtools` and the `install_github()` function like below 
+
+``
+install.packages('devtools')
+devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
+``
+## Examples
+
+### Authenticate to GTM API
+
+``
+ga_auth()
+``
+
+
+### List Accounts you have access
+
+``
+gtm_accounts_list()
+``
+
+Let's say you want to get the details from `YOUR_ACCOUNT_ID`, then you use the following
+
+``
+gtm_account(accountId = YOUR_ACCOUNT_ID)
+``
+
+### List Containers per account
+
+Similarly, to get the containers of `YOUR_ACCOUNT_ID`, use the following
+
+``
+gtm_containers_list(accountId = YOUR_ACCOUNT_ID)
+``

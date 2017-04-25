@@ -9,7 +9,7 @@
 #' @family list functions
 #' @export
 #'
-get_enviroments_list <- function(accountId,containerId) {
+gtm_enviroments_list <- function(accountId,containerId) {
   url <-
     paste0(
       "https://www.googleapis.com/tagmanager/v1/accounts/",
@@ -40,7 +40,7 @@ get_enviroments_list <- function(accountId,containerId) {
 #' @family list functions
 #' @export
 #'
-get_enviroments_list <- function(accountId,containerId,environmentId) {
+gtm_enviroments_list <- function(accountId,containerId,environmentId) {
   url <-
     paste0(
       "https://www.googleapis.com/tagmanager/v1/accounts/",

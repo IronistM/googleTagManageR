@@ -7,7 +7,7 @@
 #' @family get functions
 #' @export
 #'
-get_variables_list <- function(accountId, containerId) {
+gtm_variables_list <- function(accountId, containerId) {
   url <-
     paste0(
       "https://www.googleapis.com/tagmanager/v1/accounts/",

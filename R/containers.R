@@ -7,7 +7,7 @@
 #' @family list functions
 #' @export
 #'
-get_containers_list <- function(accountId) {
+gtm_containers_list <- function(accountId) {
   url <-
     paste0(
       "https://www.googleapis.com/tagmanager/v1/accounts/",
@@ -32,7 +32,7 @@ get_containers_list <- function(accountId) {
 #' @family get functions
 #' @return container info
 #' @export
-get_container <- function(accountId,
+gtm_container <- function(accountId,
                           containerId) {
   url <-
     paste0(
@@ -59,7 +59,7 @@ get_container <- function(accountId,
 #' @family get functions
 #' @return container info
 #' @export
-get_container_versions <- function(accountId,
+gtm_container_versions <- function(accountId,
                           containerId, headers, includeDeleted) {
   url <-
     paste0(

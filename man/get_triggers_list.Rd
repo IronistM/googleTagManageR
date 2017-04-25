@@ -16,8 +16,8 @@ Get triggers list
 
 }
 \seealso{
-Other get functions: \code{\link{get_accounts_list}},
-  \code{\link{get_container_versions}},
-  \code{\link{get_container}}, \code{\link{get_tags_list}},
-  \code{\link{get_variables_list}}
+Other get functions: \code{\link{gtm_accounts_list}},
+  \code{\link{gtm_container_versions}},
+  \code{\link{gtm_container}},
+  \code{\link{gtm_variables_list}}
 }

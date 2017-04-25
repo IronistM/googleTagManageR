@@ -7,7 +7,7 @@
 #' @family get functions
 #' @export
 #'
-get_accounts_list <- function() {
+gtm_accounts_list <- function() {
   url <-
     paste0("https://www.googleapis.com/tagmanager/v1/accounts/")
   f <- googleAuthR::gar_api_generator(url, "GET", data_parse_function = function(x) x)
@@ -23,7 +23,7 @@ get_accounts_list <- function() {
 #' @param accountId The GTM Account ID
 #' @importFrom googleAuthR gar_api_generator
 #' @export
-get_account <- function(accountId) {
+gtm_account <- function(accountId) {
   url <- paste0("https://www.googleapis.com/tagmanager/v1/accounts/", accountId)
   # tagmanager.accounts.get
   f <- googleAuthR::gar_api_generator(url, "GET", data_parse_function = function(x) x)
