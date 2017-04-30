@@ -26,5 +26,5 @@ gtm_tag <- function(accountId,containerId,tagId) {
   url <- paste0("https://www.googleapis.com/tagmanager/v1/accounts/",accountId,"/containers/",containerId,"/tags/",tagId)
   # tagmanager.tags
   f <- googleAuthR::gar_api_generator(url, "GET", data_parse_function = function(x) x)
-  f()
+  f()$parameter
 }
