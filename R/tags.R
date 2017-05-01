@@ -19,7 +19,7 @@ gtm_tags_list <- function(accountId,containerId) {
 #'
 #' @return a data frame of tags
 #' @importFrom googleAuthR gar_api_generator
-#' @family list functions
+#' @family get functions
 #' @export
 #'
 gtm_tag <- function(accountId,containerId,tagId) {
