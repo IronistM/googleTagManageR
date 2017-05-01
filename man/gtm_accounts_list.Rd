@@ -16,8 +16,9 @@ Get GTM account list
 
 }
 \seealso{
-Other get functions: \code{\link{get_triggers_list}},
-  \code{\link{gtm_container_versions}},
-  \code{\link{gtm_container}},
+Other get functions: \code{\link{gtm_container_versions}},
+  \code{\link{gtm_container}}, \code{\link{gtm_tag}},
+  \code{\link{gtm_triggers_list}},
+  \code{\link{gtm_trigger}},
   \code{\link{gtm_variables_list}}
 }

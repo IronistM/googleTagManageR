@@ -26,8 +26,8 @@ Get a GTM's enviroment details
 }
 \seealso{
 Other list functions: \code{\link{gtm_containers_list}},
-  \code{\link{gtm_tags_list}}, \code{\link{gtm_tag}}
+  \code{\link{gtm_tags_list}}
 
 Other list functions: \code{\link{gtm_containers_list}},
-  \code{\link{gtm_tags_list}}, \code{\link{gtm_tag}}
+  \code{\link{gtm_tags_list}}
 }

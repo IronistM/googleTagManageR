@@ -17,5 +17,5 @@ Get containers list
 }
 \seealso{
 Other list functions: \code{\link{gtm_enviroments_list}},
-  \code{\link{gtm_tags_list}}, \code{\link{gtm_tag}}
+  \code{\link{gtm_tags_list}}
 }
