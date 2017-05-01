@@ -35,16 +35,17 @@ gtm_triggers_list <- function(accountId, containerId) {
 #' @family get functions
 #' @export
 #'
-gtm_trigger <- function(accountId, containerId) {
+gtm_trigger <- function(accountId, containerId, triggerId) {
   url <-
     paste0(
       "https://www.googleapis.com/tagmanager/v1/accounts/",
       accountId,
       "/containers/",
       containerId,
-      "/triggers"
+      "/triggers/",
+      triggerId
     )
-  # tagmanager.triggers.list
+  # tagmanager.triggers.get
   f <-
     googleAuthR::gar_api_generator(
       url,
