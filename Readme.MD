@@ -11,35 +11,35 @@ Most of this is adopted from the excellent [autoGoogleAPI](https://github.com/Ma
 ## Installation
 To install the package in your `R` setup just use `devtools` and the `install_github()` function like below 
 
-``
+```R
 install.packages('devtools')
 devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
-``
+```
 ## Examples
 
 ### Authenticate to GTM API
 
-``
+```
 ga_auth()
-``
+```
 
 
 ### List Accounts you have access
 
-``
+```R
 gtm_accounts_list()
-``
+```
 
 Let's say you want to get the details from `YOUR_ACCOUNT_ID`, then you use the following
 
-``
+```R
 gtm_account(accountId = YOUR_ACCOUNT_ID)
-``
+```
 
 ### List Containers per account
 
 Similarly, to get the containers of `YOUR_ACCOUNT_ID`, use the following
 
-``
+```R
 gtm_containers_list(accountId = YOUR_ACCOUNT_ID)
-``
+```
