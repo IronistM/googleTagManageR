@@ -11,8 +11,13 @@ Most of this is adopted from the excellent [autoGoogleAPI](https://github.com/Ma
 ## Installation
 To install the package in your `R` setup just use `devtools` and the `install_github()` function like below
 
+<<<<<<< HEAD
 ```
 install.packages('devtools')         
+=======
+```R
+install.packages('devtools')
+>>>>>>> a73cf59ecd3aa4fde60e2bce5e2c4d6e0ece0f65
 devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
 ```
 ## Examples
@@ -22,16 +27,28 @@ devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
 ```
 ga_auth()
 ```
+<<<<<<< HEAD
 
 ### List Accounts you have access
 
 ```
+=======
+
+
+### List Accounts you have access
+
+```R
+>>>>>>> a73cf59ecd3aa4fde60e2bce5e2c4d6e0ece0f65
 gtm_accounts_list()
 ```
 
 Let's say you want to get the details from `YOUR_ACCOUNT_ID`, then you use the following
 
+<<<<<<< HEAD
 ```
+=======
+```R
+>>>>>>> a73cf59ecd3aa4fde60e2bce5e2c4d6e0ece0f65
 gtm_account(accountId = YOUR_ACCOUNT_ID)
 ```
 
@@ -39,6 +56,10 @@ gtm_account(accountId = YOUR_ACCOUNT_ID)
 
 Similarly, to get the containers of `YOUR_ACCOUNT_ID`, use the following
 
+<<<<<<< HEAD
 ```
+=======
+```R
+>>>>>>> a73cf59ecd3aa4fde60e2bce5e2c4d6e0ece0f65
 gtm_containers_list(accountId = YOUR_ACCOUNT_ID)
 ```
