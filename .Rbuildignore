@@ -2,3 +2,6 @@
 ^\.Rproj\.user$
 ^\.travis\.yml$
 ^\tests
+^\examples
+^tests$
+^examples$
