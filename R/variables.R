@@ -2,6 +2,8 @@
 #'
 #' @details
 #'
+#' @param accountId accountId to request
+#' @param containerId containerId to request
 #' @return a list of variables
 #' @importFrom googleAuthR gar_api_generator
 #' @family get functions

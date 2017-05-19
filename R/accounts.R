@@ -20,7 +20,7 @@ gtm_accounts_list <- function() {
 #' Then run \code{googleAuthR::gar_auth()} to authenticate.
 #' See \code{\link[googleAuthR]{gar_auth}} for details.
 #'
-#' @param accountId The GTM Account ID
+#' @param accountId accountId to request
 #' @importFrom googleAuthR gar_api_generator
 #' @export
 gtm_account <- function(accountId) {

@@ -3,8 +3,8 @@
 #' @details
 #'
 #' @return a list of enviroments
-#' @param accountId
-#' @param containerId
+#' @param accountId accountId to request
+#' @param containerId containerId to request
 #' @importFrom googleAuthR gar_api_generator
 #' @family list functions
 #' @export
@@ -33,8 +33,8 @@ gtm_enviroments_list <- function(accountId,containerId) {
 #' @details
 #'
 #' @return a list of enviroments
-#' @param accountId
-#' @param containerId
+#' @param accountId accountId to request
+#' @param containerId containerId to request
 #' @param environmentId
 #' @importFrom googleAuthR gar_api_generator
 #' @family list functions

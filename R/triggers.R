@@ -1,7 +1,8 @@
 #' Get triggers list
 #'
 #' @details
-#'
+#' @param accountId accountId to request
+#' @param containerId containerId to request
 #' @return a list of triggers
 #' @importFrom googleAuthR gar_api_generator
 #' @family get functions
@@ -29,7 +30,9 @@ gtm_triggers_list <- function(accountId, containerId) {
 #' Get a triggers details
 #'
 #' @details
-#'
+#' @param accountId accountId to request
+#' @param containerId containerId to request
+#' @param triggerId triggerId to request
 #' @return a daa frame of trigger detials
 #' @importFrom googleAuthR gar_api_generator
 #' @family get functions

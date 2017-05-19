@@ -2,6 +2,8 @@
 #'
 #' @details
 #'
+#' @param accountId accountId to request
+#' @param containerId containerId to request
 #' @return a data frame of tags
 #' @importFrom googleAuthR gar_api_generator
 #' @family list functions
@@ -16,7 +18,9 @@ gtm_tags_list <- function(accountId,containerId) {
 #' Get tags list
 #'
 #' @details
-#'
+#' @param accountId accountId to request
+#' @param containerId containerId to request
+#' @param tagId tagId to request
 #' @return a data frame of tags
 #' @importFrom googleAuthR gar_api_generator
 #' @family get functions
