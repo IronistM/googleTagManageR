@@ -23,7 +23,7 @@ devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
 ### Authenticate to GTM API
 
 ```
-ga_auth()
+gtm_auth()
 ```
 
 ### List Accounts you have access
