@@ -3,3 +3,5 @@
 ^\.travis\.yml$
 ^tests$
 ^examples$
+Readme.MD
+Todo.MD
