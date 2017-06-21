@@ -6,14 +6,14 @@
 \usage{
 gtm_containers_list(accountId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+}
 \value{
 a list of containers
 }
 \description{
 Get containers list
-}
-\details{
-
 }
 \seealso{
 Other list functions: \code{\link{gtm_enviroments_list}},

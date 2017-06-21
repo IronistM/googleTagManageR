@@ -9,6 +9,15 @@ gtm_enviroments_list(accountId, containerId, environmentId)
 
 gtm_enviroments_list(accountId, containerId, environmentId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+}
 \value{
 a list of enviroments
 

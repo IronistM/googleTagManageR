@@ -6,6 +6,11 @@
 \usage{
 gtm_tags_list(accountId, containerId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+}
 \value{
 a data frame of tags
 }

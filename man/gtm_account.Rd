@@ -7,7 +7,7 @@
 gtm_account(accountId)
 }
 \arguments{
-\item{accountId}{The GTM Account ID}
+\item{accountId}{accountId to request}
 }
 \description{
 Set \code{options(googleAuthR.scopes.selected = c(https://www.googleapis.com/auth/tagmanager.edit.containers, https://www.googleapis.com/auth/tagmanager.manage.accounts, https://www.googleapis.com/auth/tagmanager.readonly)}

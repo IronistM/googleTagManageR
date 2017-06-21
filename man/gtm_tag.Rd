@@ -6,14 +6,18 @@
 \usage{
 gtm_tag(accountId, containerId, tagId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+
+\item{tagId}{tagId to request}
+}
 \value{
 a data frame of tags
 }
 \description{
 Get tags list
-}
-\details{
-
 }
 \seealso{
 Other get functions: \code{\link{gtm_accounts_list}},

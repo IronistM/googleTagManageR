@@ -3,6 +3,9 @@ Type: Package
 Title: Interact with the Google Tag Manager API
 Version: 0.1.0
 Author: Manos Parzakonis
+Authors@R: c(
+    person('Manos','Parzakonis',email='parzakonis.m@gmail.com',role=c('aut','cre'))
+    )
 Maintainer: Manos Parzakonis <parzakonis.m@gmail.com>
 Description: The R way to interact with Google's Tag Manager API
     At the moment listing of elements is available, but in the future both updates and delete will be supported. 
