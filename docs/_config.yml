@@ -1,1 +1,32 @@
 theme: jekyll-theme-slate
+
+reference:
+  - title: "Google Tag Manager Accounts"
+    desc: >
+      Functions for installing Spark components and managing
+      connections to Spark
+    contents:
+      - starts_with("gtm_account")
+  - title: "Google Tag Manager Tags"
+    desc: "Functions for reading and writing Spark DataFrames."
+    contents:
+      - starts_with("gtm_tag")
+   - title: "Google Tag Manager Triggers"
+    desc: "Functions for reading and writing Spark DataFrames."
+    contents:
+      - starts_with("gtm_tri")
+   - title: "Google Tag Manager Variables"
+    desc: "Functions for reading and writing Spark DataFrames."
+    contents:
+      - starts_with("gtm_var")
+   - title: "Google Tag Manager Enviroments"
+    desc: "Functions for reading and writing Spark DataFrames."
+    contents:
+      - starts_with("gtm_env")
+   - title: "Google Tag Manager Containers"
+    desc: "Functions for reading and writing Spark DataFrames."
+    contents:
+      - starts_with("gtm_container")
+
+
+

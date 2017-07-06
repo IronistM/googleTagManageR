@@ -6,16 +6,25 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interact with the Google Tag Manager API • googleTagManageR</title>
-<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- jquery --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script><!-- Bootstrap --><link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="jquery.sticky-kit.min.js"></script><script src="pkgdown.js"></script><!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+<![endif]--><!-- Google analytics --><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-25119046-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 <body>
-    <div class="container template-home">
+    <div class="container template-vignette">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -29,10 +38,23 @@
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
+  <a href="/index.html">
+    <span class="fa fa-home fa-lg"></span>
+     
+  </a>
+</li>
+<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
-<ul class="nav navbar-nav navbar-right"></ul>
+<ul class="nav navbar-nav navbar-right">
+<li>
+  <a href="https://github.com/IronistM/googleTagManageR">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
 </div>
 <!--/.nav-collapse -->
   </div>
@@ -42,20 +64,79 @@
 
       
       </header><div class="row">
-  <div class="contents col-md-9">
-    The R way to interact with Google's Tag Manager API
-    At the moment listing of elements is available, but in the future both updates and delete will be supported. 
-    Most of this is adopted from the excellent autoGoogleAPi package from Mark Edmondson <r></r>
-</div>
+  <div class="col-md-9">
+    
 
-  <div class="col-md-3" id="sidebar">
-    <h2>License</h2>
+    
+    
+<div class="contents">
+<div id="googletagmanager" class="section level1">
+<div class="page-header"><h1 class="hasAnchor">
+<a href="#googletagmanager" class="anchor"></a>googleTagManageR</h1></div>
+
+<div id="in-short" class="section level2">
+<h2 class="hasAnchor">
+<a href="#in-short" class="anchor"></a>In Short</h2>
+<p>The R way to interact with Google’s Tag Manager API.</p>
+<div id="scope" class="section level3">
+<h3 class="hasAnchor">
+<a href="#scope" class="anchor"></a>Scope</h3>
+<p>At the moment listing of elements is available, but in the future both updates and delete will be supported. This is <strong>not</strong> a professional package and serves mostly as a way of organising code snippets for my work.</p>
+</div>
+<div id="credits" class="section level3">
+<h3 class="hasAnchor">
+<a href="#credits" class="anchor"></a>Credits</h3>
+<p>Most of this is adopted from the excellent <a href="https://github.com/MarkEdmondson1234/autoGoogleAPI">autoGoogleAPI</a> package from <a href="r@sunholo.com">Mark Edmondson</a> and his most awesome <a href="http://code.markedmondson.me/googleAnalyticsR">googleAnalyticsR</a> that I use daily.</p>
+</div>
+</div>
+<div id="installation" class="section level2">
+<h2 class="hasAnchor">
+<a href="#installation" class="anchor"></a>Installation</h2>
+<p>To install the package in your <code>R</code> setup just use <code>devtools</code> and the <code>install_github()</code> function like below</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">'devtools'</span>)
+devtools::<span class="kw">install_github</span>(<span class="dt">username =</span> <span class="st">'IronistM'</span>,<span class="dt">repo =</span> <span class="st">'googleTagManageR'</span>)</code></pre></div>
+</div>
+<div id="examples" class="section level2">
+<h2 class="hasAnchor">
+<a href="#examples" class="anchor"></a>Examples</h2>
+<div id="authenticate-to-gtm-api" class="section level3">
+<h3 class="hasAnchor">
+<a href="#authenticate-to-gtm-api" class="anchor"></a>Authenticate to GTM API</h3>
+<pre><code>gtm_auth()</code></pre>
+</div>
+<div id="list-accounts-you-have-access" class="section level3">
+<h3 class="hasAnchor">
+<a href="#list-accounts-you-have-access" class="anchor"></a>List Accounts you have access</h3>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">gtm_accounts_list</span>()</code></pre></div>
+<p>Let’s say you want to get the details from <code>YOUR_ACCOUNT_ID</code>, then you use the following</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">gtm_account</span>(<span class="dt">accountId =</span> YOUR_ACCOUNT_ID)</code></pre></div>
+</div>
+<div id="list-containers-per-account" class="section level3">
+<h3 class="hasAnchor">
+<a href="#list-containers-per-account" class="anchor"></a>List Containers per account</h3>
+<p>Similarly, to get the containers of <code>YOUR_ACCOUNT_ID</code>, use the following</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">gtm_containers_list</span>(<span class="dt">accountId =</span> YOUR_ACCOUNT_ID)</code></pre></div>
+</div>
+</div>
+</div>
+</div>
+  </div>
+
+  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+    <h2 class="hasAnchor">
+<a href="#sidebar" class="anchor"></a>License</h2>
 <p>GPL</p>
 <h2>Developers</h2>
 <ul class="list-unstyled">
 <li>Manos Parzakonis <br><small class="roles"> Author, maintainer </small> </li>
 </ul>
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://travis-ci.org/IronistM/googleTagManageR"><img src="https://travis-ci.org/IronistM/googleTagManageR.svg?branch=master" alt="Travis-CI Build Status"></a></li>
+<li><a href="https://cran.r-project.org/package=googleTagManageR"><img src="http://www.r-pkg.org/badges/version/googleTagManageR" alt="CRAN_Status_Badge"></a></li>
+</ul>
 </div>
+
 </div>
 
 

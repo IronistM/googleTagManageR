@@ -1,0 +1,40 @@
+authors:
+  Manos PArzakonis:
+    href: https://statsravingmad.com
+
+template:
+  params:
+    bootswatch: sandstone
+    ganalytics: UA-25119046-1
+
+reference:
+  - title: "Google Tag Manager Accounts"
+    desc: >
+      Functions for getting account related details and information.
+    contents:
+      - starts_with("gtm_account")
+  - title: "Google Tag Manager Tags"
+    desc: "Functions for getting details and information on tags."
+    contents:
+      - starts_with("gtm_tag")
+  - title: "Google Tag Manager Triggers"
+    desc: "Functions for getting related details and information on triggers"
+    contents:
+      - starts_with("gtm_tri")
+  - title: "Google Tag Manager Variables"
+    desc: "Functions for etting related details and information on variables"
+    contents:
+      - starts_with("gtm_var")
+  - title: "Google Tag Manager Enviroments"
+    desc: "Functions for etting related details and information on enviroments"
+    contents:
+      - starts_with("gtm_env")
+  - title: "Google Tag Manager Containers"
+    desc: "Functions for etting related details and information on containers"
+    contents:
+      - starts_with("gtm_container")
+
+navbar:
+  right:
+  - icon: fa-github
+    href: https://github.com/IronistM/googleTagManageR
