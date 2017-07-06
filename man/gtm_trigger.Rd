@@ -6,14 +6,18 @@
 \usage{
 gtm_trigger(accountId, containerId, triggerId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+
+\item{triggerId}{triggerId to request}
+}
 \value{
 a daa frame of trigger detials
 }
 \description{
 Get a triggers details
-}
-\details{
-
 }
 \seealso{
 Other get functions: \code{\link{gtm_accounts_list}},

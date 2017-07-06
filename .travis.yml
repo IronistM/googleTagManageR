@@ -14,4 +14,4 @@ r_build_args: --no-build-vignettes --no-manual --no-resave-data
 r_check_args: --no-build-vignettes --no-manual
 
 notifications:
-    slack: statsravingmad:G3y6WxKuIzgIgMNID7ifUGn4
+    slack: googleauthrverse:tGfXjSD58cQSEr1YuzQ5hKPS

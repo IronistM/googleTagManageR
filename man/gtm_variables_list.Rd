@@ -6,6 +6,11 @@
 \usage{
 gtm_variables_list(accountId, containerId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+}
 \value{
 a list of variables
 }

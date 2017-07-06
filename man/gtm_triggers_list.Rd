@@ -6,14 +6,16 @@
 \usage{
 gtm_triggers_list(accountId, containerId)
 }
+\arguments{
+\item{accountId}{accountId to request}
+
+\item{containerId}{containerId to request}
+}
 \value{
 a list of triggers
 }
 \description{
 Get triggers list
-}
-\details{
-
 }
 \seealso{
 Other get functions: \code{\link{gtm_accounts_list}},
