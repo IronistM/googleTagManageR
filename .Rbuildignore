@@ -7,3 +7,4 @@ Readme.MD
 Todo.MD
 ^docs$
 ^_pkgdown\.yml$
+^codecov\.yml$

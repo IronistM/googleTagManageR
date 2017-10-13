@@ -1,4 +1,5 @@
 [![Travis-CI Build Status](https://travis-ci.org/IronistM/googleTagManageR.svg?branch=master)](https://travis-ci.org/IronistM/googleTagManageR)
+[![Coverage Status](https://img.shields.io/codecov/c/github/IronistM/googleTagManageR/master.svg)](https://codecov.io/github/IronistM/googleTagManageR?branch=master)
 
 ## In Short
 The R way to interact with Google's Tag Manager API.

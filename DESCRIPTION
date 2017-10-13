@@ -7,9 +7,9 @@ Authors@R: c(
     person('Manos','Parzakonis',email='parzakonis.m@gmail.com',role=c('aut','cre'))
     )
 Maintainer: Manos Parzakonis <parzakonis.m@gmail.com>
-Description: The R way to interact with Google's Tag Manager API
+Description: The R way to interact with Google's Tag Manager API.
     At the moment listing of elements is available, but in the future both updates and delete will be supported. 
-    Most of this is adopted from the excellent autoGoogleAPi package from Mark Edmondson <r@sunholo.com>
+    Most of this is adopted from the excellent autoGoogleAPI package from Mark Edmondson <r@sunholo.com>
 License: GPL
 Encoding: UTF-8
 LazyData: true
@@ -26,5 +26,6 @@ Imports:
 Suggests:
     knitr,
     dplyr (>= 0.5.0),
-    rmarkdown
+    rmarkdown,
+    covr
 RoxygenNote: 6.0.1
