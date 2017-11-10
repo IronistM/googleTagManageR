@@ -7,7 +7,9 @@ branches:
 language: r
 r:
   - release
-r_github_packages: hadley/devtools
+r_github_packages:
+  - hadley/devtools
+  - mangothecat/callr
 sudo: false
 cache: packages
 
