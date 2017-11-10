@@ -15,6 +15,3 @@ r_check_args: --no-build-vignettes --no-manual
 
 notifications:
     slack: googleauthrverse:tGfXjSD58cQSEr1YuzQ5hKPS
-
-after_success:
-  - Rscript -e 'covr::codecov()'
