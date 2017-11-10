@@ -4,7 +4,10 @@ branches:
   only:
     - master
 
-language: R
+language: r
+r:
+  - release
+r_github_packages: hadley/devtools
 sudo: false
 cache: packages
 
