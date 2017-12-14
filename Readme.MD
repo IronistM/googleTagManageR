@@ -17,7 +17,7 @@ To install the package in your `R` setup just use `devtools` and the `install_gi
 
 ```R
 install.packages('devtools')
-devtools::install_github(username = 'IronistM',repo = 'googleTagManageR')
+devtools::install_github('IronistM/googleTagManageR')
 ```
 ## Examples
 
